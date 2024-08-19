@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  cursor: pointer;
+}
+
+/* Navbar */
+#nav {
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 600;
+  color: white;
+}
+
+h5 {
+  text-align: center;
+  margin-top: 2%;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#nav h2 {
+  margin: 0;
+}
+
+#nav .d-flex {
+  display: flex;
+  align-items: center;
+}
+
+#nav #inph {
+  width: 200px;
+  margin-right: 10px;
+}
+
+/* Main Section */
+#main {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #nav .d-flex {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #nav #inph {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #main {
+    padding: 10px;
+  }
+
+  p {
+    padding: 5px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav h2 {
+    font-size: 1.5rem;
+  }
+
+  #nav #inph {
+    font-size: 0.9rem;
+  }
+
+  #nav #btnh {
+    font-size: 0.9rem;
+  }
+}
+
+p {
+  padding: 5px;
+  margin: 0;
+}
+li {
+  padding: 5px;
+}
