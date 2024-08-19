@@ -1,6 +1,6 @@
 let btn = document.querySelector("#btnh");
 let p = document.querySelector("#result");
-let uni = "https://universities.hipolabs.com/search?name=";
+let uni = "http://universities.hipolabs.com/search?name=";
 
 btn.addEventListener("click", async () => {
   let inp = document.querySelector("#inph").value;
@@ -22,7 +22,9 @@ function show(clgarr) {
     li.innerText = clg.name || "No name available";
     h2.innerText = clg.country || "No country available";
     h3.style.color = "blue";
-    h3.innerText = clg.web_pages ? clg.web_pages.join(", ") : "No web pages available";
+    h3.innerText = clg.web_pages
+      ? clg.web_pages.join(", ")
+      : "No web pages available";
     p.append(li, h3);
   }
 }
