@@ -1,6 +1,6 @@
 let btn = document.querySelector("#btnh");
 let p = document.querySelector("#result");
-let uni = "http://universities.hipolabs.com/search?name=";
+let uni = "https://universities.hipolabs.com/search?name=";
 
 btn.addEventListener("click", async () => {
   let inp = document.querySelector("#inph").value;
